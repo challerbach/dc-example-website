@@ -5,8 +5,9 @@ module.exports = {
             route: "/",
             layout: "homepage",
             slots: {
-                "hero": "d55b27e8-23b3-4a70-b78f-a5d6112452b5",
-                "body": "786fdfe5-738b-436c-9af0-76a7f7696e98"
+                "hero": "2eb20504-341e-4c5f-9f0f-13b0d59a5c1e",
+                "body": "786fdfe5-738b-436c-9af0-76a7f7696e98",
+                "footer": "c3568665-0fb5-4da5-891f-adc2e8af2779"
             }
         },
         {
