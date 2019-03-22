@@ -65,6 +65,11 @@
         }
      }
     },
+    "ActBeautiful": {
+      "type": "boolean",
+      "title": "ActBeautiful font",
+      "description": "Enable to have ActBeautiful font in Header"
+    },
     "subheader": {
       "type": "string",
       "title": "Subheader",
@@ -133,11 +138,6 @@
       "type": "boolean",
       "title": "Stack Mobile Layout",
       "description": "Enable to allow banner text to stack underneath the image on small screens. Default is false"
-    },
-    "ActBeautiful": {
-      "type": "boolean",
-      "title": "ActBeautiful font",
-      "description": "Enable to have ActBeautiful font in Header"
     }
   },
   "propertyOrder": [
