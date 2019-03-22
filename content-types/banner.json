@@ -44,16 +44,16 @@
       "title": "Header",
       "description": "Header text for the banner",
       "validation": "Please enter less than 255 characters",
-      "allOf":[  
-        {  
+      "allOf":[
+        {
            "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
         }
      ],
-     "properties":{  
-        "values":{  
-           "items":{  
-              "properties":{  
-                 "value":{  
+     "properties":{
+        "values":{
+           "items":{
+              "properties":{
+                 "value":{
                     "title": "Header",
                     "description": "Header text for the banner",
                     "type":"string",
@@ -133,6 +133,11 @@
       "type": "boolean",
       "title": "Stack Mobile Layout",
       "description": "Enable to allow banner text to stack underneath the image on small screens. Default is false"
+    },
+    "ActBeautiful": {
+      "type": "boolean",
+      "title": "ActBeautiful font",
+      "description": "Enable to have ActBeautiful font in Header"
     }
   },
   "propertyOrder": [
@@ -142,6 +147,7 @@
     "header",
     "header_fr-FR",
     "header_de-DE",
+    "ActBeautiful",‚
     "subheader",
     "description",
     "button",
