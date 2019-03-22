@@ -16,7 +16,7 @@
       "description": "Meta data related to this content",
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/metadata.json"
+          "$ref": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/metadata.json"
         }
       ]
     },
@@ -26,7 +26,7 @@
       "description": "The background image for the banner",
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/image.json"
+          "$ref": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/image.json"
         }
       ]
     },
@@ -36,7 +36,7 @@
       "description": "The image to display with the textual content for this banner",
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/image.json"
+          "$ref": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/image.json"
         }
       ]
     },
@@ -92,7 +92,7 @@
       "description": "The action link / button for the banner",
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/link.json"
+          "$ref": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/link.json"
         }
       ],
       "_interpolate": true
