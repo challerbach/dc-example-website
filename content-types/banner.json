@@ -65,6 +65,7 @@
         }
      }
     },
+
     "subheader": {
       "type": "string",
       "title": "Subheader",
@@ -138,7 +139,20 @@
       "type": "boolean",
       "title": "ActBeautiful font",
       "description": "Enable to have ActBeautiful font in Header"
-    }
+    },
+	"headcolor": {
+		"title": "Headline color",
+		"description": "Color of the headline",
+		"format": "color",
+		"type": "string"
+	},
+	"headsize": {
+		"title": "Headline font size in px",
+		"description": "Size of the Headline",
+		"type": "number",
+		"minimum": 12,
+		"maximum": 80
+	}
   },
   "propertyOrder": [
     "metadata",
@@ -147,7 +161,9 @@
     "header",
     "header_fr-FR",
     "header_de-DE",
-    "ActBeautiful",‚
+	"headcolor",
+	"headsize",
+    "ActBeautiful",
     "subheader",
     "description",
     "button",
