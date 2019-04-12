@@ -16,7 +16,7 @@
       "description": "Meta data related to this content",
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/metadata.json"
+          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/metadata.json"
         }
       ]
     },
@@ -26,7 +26,7 @@
       "description": "The background image for the banner",
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/image.json"
+          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/image.json"
         }
       ]
     },
@@ -36,7 +36,7 @@
       "description": "The image to display with the textual content for this banner",
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/image.json"
+          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/image.json"
         }
       ]
     },
@@ -65,11 +65,7 @@
         }
      }
     },
-    "ActBeautiful": {
-      "type": "boolean",
-      "title": "ActBeautiful font",
-      "description": "Enable to have ActBeautiful font in Header"
-    },
+
     "subheader": {
       "type": "string",
       "title": "Subheader",
@@ -92,7 +88,7 @@
       "description": "The action link / button for the banner",
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/link.json"
+          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/link.json"
         }
       ],
       "_interpolate": true
@@ -138,7 +134,25 @@
       "type": "boolean",
       "title": "Stack Mobile Layout",
       "description": "Enable to allow banner text to stack underneath the image on small screens. Default is false"
-    }
+    },
+    "ActBeautiful": {
+      "type": "boolean",
+      "title": "ActBeautiful font",
+      "description": "Enable to have ActBeautiful font in Header"
+    },
+	"headcolor": {
+		"title": "Headline color",
+		"description": "Color of the headline",
+		"format": "color",
+		"type": "string"
+	},
+	"headsize": {
+		"title": "Headline font size in px",
+		"description": "Size of the Headline",
+		"type": "number",
+		"minimum": 12,
+		"maximum": 80
+	}
   },
   "propertyOrder": [
     "metadata",
@@ -147,6 +161,8 @@
     "header",
     "header_fr-FR",
     "header_de-DE",
+	"headcolor",
+	"headsize",
     "ActBeautiful",
     "subheader",
     "description",
