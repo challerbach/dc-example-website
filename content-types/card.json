@@ -16,7 +16,7 @@
       "description": "Image used in the card",
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/image.json"
+          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/image.json"
         }
       ]
     },
@@ -27,6 +27,17 @@
       "validation": "Please enter less than 50 characters",
       "minLength": 0,
       "maxLength": 150
+    },
+    "propertyName1": {
+      "title": "Card name color",
+      "description": "Color of the headline",
+      "format": "color",
+      "type": "string"
+    },
+    "propertyName2": {
+      "title": "Act Beauitiful",
+      "description": "Card name font Act Beautiful",
+      "type": "boolean"
     },
     "description": {
       "type": "string",
@@ -41,7 +52,7 @@
       "title": "Links",
       "description": "Links for the card",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/link.json"
+        "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/link.json"
       },
       "minItems": 0,
       "maxItems": 4
