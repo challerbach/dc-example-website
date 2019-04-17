@@ -65,5 +65,14 @@
       "minLength": 0,
       "maxLength": 100
     }
-  }
+  },
+   "propertyOrder": [
+    "image",
+    "cardName",
+    "cardNameColor",
+    "cardNameFont",
+    "description",
+    "links",
+    "style"
+  ]
 }
