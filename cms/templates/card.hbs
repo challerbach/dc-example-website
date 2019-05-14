@@ -3,14 +3,14 @@
         {{> image image }}
         <div class="amp-ca-card-text-wrap">
             {{#if cardName}}
-            <div class="amp-ca-card-name">{{cardName}}</div>
+            <div class="amp-ca-card-name {{#if cardNameFont}}ActBeautifulCard{{/if}}" style="{{#if cardNameColor}}color:{{cardNameColor}};{{/if}}">{{cardName}}</div>
             {{/if}} {{#if description}}
             <p class="amp-ca-card-description">{{description}}</p>
             {{/if}}
             <div class="amp-ca-card-link-container">
                 {{#each links}}
                 <div class="amp-ca-card-link-holder link">
-                    <a class="amp-ca-card-link amp-ca-banner-button readMore {{#if ../style}}{{../style}}{{else}}black{{/if}}"  href="{{value}}">
+                    <a class="amp-ca-card-link amp-ca-banner-button readMore"  href="{{value}}">
                     {{#if label}}
                         {{label}}
                     {{else}}

@@ -1,3 +1,14 @@
+@font-face {
+            font-family:'act_beautiful_01regular';
+            src:url(/fonts/ActBeautiful_01.eot);
+            src:url(/fonts/ActBeautiful_01.eot?#iefix) format('embedded-opentype'),url(/fonts/ActBeautiful_01.woff) format('woff'),url(/fonts/ActBeautiful_01.ttf) format('truetype');
+          }
+
+.ActBeautifulCard{
+  font-family:'act_beautiful_01regular';
+  font-size: 20px !important;
+}
+
 .amp-ca-card {
     width: 100%;
     display: inline-block;
@@ -14,9 +25,11 @@
 
     .amp-ca-card-text-wrap {
         position: absolute;
-        margin-top: -5%;
+        margin-top: -7%;
         margin-left: 1%;
         text-align: left;
+        max-width: 250px;
+        background: white;
     }
 
     .amp-ca-card-name {
@@ -37,7 +50,7 @@
     .amp-ca-card-link-holder {
         margin-bottom: 5px;
 
-        .amp-ca-banner-button {
+        /*.amp-ca-banner-button {
             font-size: 18px;
             margin-top: 15px;
             display: inline-block;
@@ -72,6 +85,8 @@
             }
         }
     }
+
+
     .amp-ca-card-link {
         color: #8F8F8F;
         text-decoration: none;
@@ -83,5 +98,15 @@
             cursor: pointer;
             color: #b01c4d;
         }
+    }*/
+    .amp-ca-card-link {
+        color: #89941b;
+        text-align: right;
+        border: none;
+        background: transparent;
+        text-decoration: none;
+        font-size: 16px;
+        white-space: nowrap;
+      }
     }
 }
