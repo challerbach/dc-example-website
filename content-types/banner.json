@@ -10,30 +10,10 @@
   ],
   "type": "object",
   "properties": {
-    "metadata": {
-      "type": "object",
-      "title": "Meta Data",
-      "description": "Meta data related to this content",
-      "allOf": [
-        {
-          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/metadata.json"
-        }
-      ]
-    },
     "img": {
       "type": "object",
       "title": "Image",
       "description": "The background image for the banner",
-      "allOf": [
-        {
-          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/image.json"
-        }
-      ]
-    },
-    "contentImg": {
-      "type": "object",
-      "title": "Content Image",
-      "description": "The image to display with the textual content for this banner",
       "allOf": [
         {
           "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/image.json"
