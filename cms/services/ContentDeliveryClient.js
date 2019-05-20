@@ -3,7 +3,7 @@ const request = require('request');
 function ContentDeliveryClient(baseUrl, account, locale) {
     this.baseUrl = baseUrl;
     this.account = account;
-    this.locale = locale;
+    this.locale = locale || 'de-DE';
 
     if(this.baseUrl.indexOf('://') == -1) {
         this.baseUrl = 'http://' + this.baseUrl;
