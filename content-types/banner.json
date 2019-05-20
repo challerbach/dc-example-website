@@ -194,7 +194,7 @@
   },
   "subsize": {
 	"title": "Subheader font size in px",
-	"description": "Size of the SUBLINE",
+	"description": "Size of the Subtitle",
 	"type": "number",
 	"enum": [
                  "12",
@@ -204,6 +204,18 @@
 		 "60"
                    ]
   },
+  "descsize": {
+	"title": "Description font size in px",
+	"description": "Size of the description text",
+	"type": "number",
+	"enum": [
+                 "12",
+                 "24",
+                 "36",
+		 "48",
+		 "60"
+                   ]
+  },	  
   "propertyOrder": [
     "metadata",
     "img",
