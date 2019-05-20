@@ -174,19 +174,35 @@
       "title": "ActBeautiful font",
       "description": "Enable to have ActBeautiful font in Header"
     },
-	"headcolor": {
-		"title": "Headline color",
-		"description": "Color of the headline",
-		"format": "color",
-		"type": "string"
+    "headcolor": {
+	"title": "Headline color",
+	"description": "Color of the headline",
+	"format": "color",
+	"type": "string"
 	},
-	"headsize": {
-		"title": "Headline font size in px",
-		"description": "Size of the Headline",
-		"type": "number",
-		"minimum": 12,
-		"maximum": 80
-	}
+    "headsize": {
+	"title": "Headline font size in px",
+	"description": "Size of the Headline",
+	"type": "number",
+	"enum": [
+                 "12",
+                 "24",
+                 "36",
+		 "48",
+		 "60"
+                   ]
+  },
+  "subsize": {
+	"title": "Subheader font size in px",
+	"description": "Size of the SUBLINE",
+	"type": "number",
+	"enum": [
+                 "12",
+                 "24",
+                 "36",
+		 "48",
+		 "60"
+                   ]
   },
   "propertyOrder": [
     "metadata",
