@@ -57,6 +57,7 @@
                     "title": "Header",
                     "description": "Header text for the banner",
                     "type":"string",
+		    "format": "markdown",
                     "minLength":0,
                     "maxLength":255
                  }
