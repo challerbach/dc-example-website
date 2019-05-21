@@ -155,7 +155,7 @@
     "headsize": {
 	"title": "Headline font size in px",
 	"description": "Size of the Headline",
-	"type": "number",
+	"type": "string",
 	"enum": [
                  "12",
                  "24",
@@ -167,7 +167,7 @@
   "subsize": {
 	"title": "Subheader font size in px",
 	"description": "Size of the Subtitle",
-	"type": "number",
+	"type": "string",
 	"enum": [
                  "12",
                  "24",
@@ -179,7 +179,7 @@
   "descsize": {
 	"title": "Description font size in px",
 	"description": "Size of the description text",
-	"type": "number",
+	"type": "string",
 	"enum": [
                  "12",
                  "24",
