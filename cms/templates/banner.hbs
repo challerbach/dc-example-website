@@ -1,9 +1,4 @@
 <div class="amp-ca-banner js_ca_banner">
-    {{#with img}}
-        <div class="amp-ca-banner-pic-wrap">
-            {{> image this }}
-        </div>
-    {{/with}}
     <div class="amp-ca-banner-info-wrap
     {{#if stackMobileLayout}}amp-ca-info-bottom{{else}}amp-ca-info-normal{{/if}}
         {{#unless header}}
@@ -29,25 +24,49 @@
          >
 
         <div class="amp-ca-banner-info {{#if style}}{{style}}{{else}}black{{/if}} {{#if hideBG}}hideBG{{/if}}">
-            {{#with contentImg}}
-                <div class="amp-ca-banner-pic-wrap">
-                    {{> image this }}
-                </div>
-            {{/with}}
-
             {{#if header}}
                 <div class="amp-ca-banner-header {{#if ActBeautiful}}ActBeautiful{{/if}}" style="{{#if headcolor}}color:{{headcolor}};{{/if}}{{#if headsize}}font-size:{{headsize}}px{{/if}}">{{{header}}}</div>
             {{/if}}
             {{#if subheader}}
                 <div class="amp-ca-banner-subheader" style="{{#if subsize}}font-size:{{subsize}}px{{/if}}">{{{subheader}}}</div>
             {{/if}}
+            <!--
             {{#if description}}
                 <div class="amp-ca-banner-description" style="{{#if descsize}}font-size:{{descsize}}px{{/if}}">{{{description}}}</div>
             {{/if}}
             {{#if button.label}}
                 <a href="{{button.url}}"
                    class="amp-ca-banner-button readMore {{#if style}}{{style}}{{else}}black{{/if}}">{{button.label}}</a>
-            {{/if}}
+            {{/if}}#
+            -->
         </div>
     </div>
+    {{#with img}}
+    <div class="amp-ca-banner-pic-wrap">
+        {{> image this }}
+    </div>
+    {{/with}}
+
+    {{#if description}}
+        <div class="amp-ca-banner-description" style="{{#if descsize}}font-size:{{descsize}}px{{/if}}"data-align="{{#if alignment}}{{alignment}}{{else}}left{{/if}}"
+
+        {{#compare alignment '==' 'left'}}
+           style="left:{{percH}}%;top:{{percV}}%";
+        {{/compare}}
+        {{#compare alignment '==' 'right'}}
+           style="right:{{percH}}%;top:{{percV}}%";
+        {{/compare}}
+        {{#compare alignment '==' 'center'}}
+           style="left:{{percH}}%;top:{{percV}}%";
+        {{/compare}}>{{{description}}}
+      </div>
+    {{/if}}
+    {{#if button.label}}
+    <div class="amp-ca-banner-description" data-align="{{#if alignment}}{{alignment}}{{else}}left{{/if}}">
+
+        <a href="{{button.url}}"
+           class="amp-ca-banner-button readMore {{#if style}}{{style}}{{else}}black{{/if}}">{{button.label}}</a>
+    </div>
+    {{/if}}
+
 </div>
