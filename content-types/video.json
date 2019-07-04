@@ -2,7 +2,7 @@
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/video.json",
   "title": "Video",
-  "description": "A reusable component to display a video",
+    "description": "A reusable component to display a video",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -19,6 +19,11 @@
           "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/video-link"
         }
       ]
-    }
+    },
+	"Autoplay": {
+		"title": "Autoplay",
+		"description": "Autoplay Video",
+		"type": "boolean"
+	}
   }
 }
