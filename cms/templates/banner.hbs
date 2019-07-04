@@ -31,18 +31,18 @@
         <div class="amp-ca-banner-info {{#if style}}{{style}}{{else}}black{{/if}} {{#if hideBG}}hideBG{{/if}}">
             {{#with contentImg}}
                 <div class="amp-ca-banner-pic-wrap">
-                    {{> image this}}
+                    {{> image this }}
                 </div>
             {{/with}}
 
             {{#if header}}
-                <div class="amp-ca-banner-header">{{header}}</div>
+                <div class="amp-ca-banner-header {{#if ActBeautiful}}ActBeautiful{{/if}}" style="{{#if headcolor}}color:{{headcolor}};{{/if}}{{#if headsize}}font-size:{{headsize}}px{{/if}}">{{{header}}}</div>
             {{/if}}
             {{#if subheader}}
-                <div class="amp-ca-banner-subheader">{{subheader}}</div>
+                <div class="amp-ca-banner-subheader" style="{{#if subsize}}font-size:{{subsize}}px{{/if}}">{{{subheader}}}</div>
             {{/if}}
             {{#if description}}
-                <div class="amp-ca-banner-description">{{description}}</div>
+                <div class="amp-ca-banner-description" style="{{#if descsize}}font-size:{{descsize}}px{{/if}}">{{{description}}}</div>
             {{/if}}
             {{#if button.label}}
                 <a href="{{button.url}}"
