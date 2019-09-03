@@ -10,7 +10,7 @@
             <div class="amp-ca-card-link-container">
                 {{#each links}}
                 <div class="amp-ca-card-link-holder link">
-                    <a class="amp-ca-card-link readMore" href="{{value}}">
+                    <a class="amp-ca-card-link amp-ca-banner-button readMore {{#if ../style}}{{../style}}{{else}}black{{/if}}"  href="{{value}}">
                     {{#if label}}
                         {{label}}
                     {{else}}

@@ -1,32 +1,61 @@
 module.exports = {
     cms: "https://c1.adis.ws",
-    cmsAccount: "nmdemo",
+    cmsAccount: "presales",
     sitemap: [{
             route: "/",
             layout: "landing",
             slots: {
-                "content": "3cbba4da-f90e-47f5-9457-cb70a6cd7770"
+                "content": "b71dd98b-785c-41df-9e13-099fb2d07905"
             }
         },
         {
-            route: "/bose",
+            route: "/womens",
             layout: "landing",
             slots: {
-                "content": "8e5a7412-ad68-4125-a350-3e35d0c9d1ee"
+                "content": "42003671-7128-44cc-ac49-98b0fad0f79d"
             }
         },
         {
-            route: "/kitchen",
+            route: "/mens",
             layout: "landing",
             slots: {
-                "content": "2695b577-f0a0-458f-b516-d3a1bde5ea71"
+                "content": "6ca12033-e9cc-4268-8d49-bf986c858bf0"
             }
         },
         {
-            route: "/mac",
+            route: "/beauty",
             layout: "landing",
             slots: {
-                "content": "f1acfa8f-1fde-42ea-912f-d8e786bb71cd"
+                "content": "6895dc4e-76a8-4451-b15c-a086e4591d3b"
+            }
+        },
+        {
+            route: "/lighting",
+            layout: "landing",
+            slots: {
+                "content": "33ad3e34-6efe-4030-a157-e95660200ff2"
+            }
+        },
+        {
+            route: "/furniture",
+            layout: "landing",
+            slots: {
+                "content": "78b2a5bf-764c-41c3-88ac-6ed88e85ff44"
+            }
+        },
+        ,
+        {
+            route: "/electricals",
+            layout: "landing",
+            slots: {
+                "content": "38935fef-01e0-40e1-acfd-caf4f4e41219"
+            }
+        },
+        {
+            route: "/inspiration",
+            layout: "landing",
+            slots: {
+                "content": "7b3291ac-2e91-459c-bc27-58c7cd7878d3"
             }
         }
     ]

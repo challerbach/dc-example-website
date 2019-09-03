@@ -9,9 +9,7 @@ var markoExpress = require('marko/express');
 
 var contentPages = require('./routes/content-pages');
 var visualization = require('./routes/visualization');
-var dixonsvisualization = require('./routes/dixonsvisualization');
 var card = require('./routes/card');
-var dixonscard = require('./routes/dixonscard');
 //var settings = require('./routes/settings');
 var preview = require('./routes/preview');
 
@@ -36,9 +34,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/preview', preview);
 app.use('/preview/snapshot', visualization);
 app.use('/preview/card', card);
-app.use('/preview/dixons/snapshot', dixonsvisualization);
-app.use('/preview/dixons/card', dixonscard);
-
 
 //app.use('/visualization', visualization);
 app.use('/', contentPages);

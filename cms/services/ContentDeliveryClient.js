@@ -29,7 +29,7 @@ ContentDeliveryClient.prototype.query = function(query, scope, fullBodyObject) {
             '?query=' + encodeURIComponent(JSON.stringify(query)) +
             '&store=' + encodeURIComponent(this.account) +
             '&scope=' + encodeURIComponent(scope) +
-            '&fullBodyObject=' + encodeURIComponent(fullBodyObject);
+            '&fullBodyObject=' + encodeURIComponent(fullBodyObject) + '&locale=de-DE,en-GB,*';
     console.log(url)
 
     return new Promise(function(resolve, reject) {

@@ -30,6 +30,41 @@
     }
     .amp-ca-card-link-holder {
         margin-bottom: 5px;
+
+        .amp-ca-banner-button {
+            font-size: 18px;
+            margin-top: 15px;
+            display: inline-block;
+            //width: 100%;
+            border: solid 2px white;
+            padding: 8px 16px;
+            background: #000;
+            color:#fff;
+            text-decoration: none;
+            //font-weight: bold;
+            box-sizing: border-box;
+            min-width: 120px;
+            &.black {
+                background: #000;
+                color: #fff;
+                border: solid 2px white;
+            }
+            &.black:hover {
+                background: #fff;
+                color: #000;
+                border: solid 2px black;
+            }
+            &.white {
+                background: #fff;
+                color: #000;
+                border: solid 2px black;
+            }
+            &.white:hover {
+                background: #000;
+                color: #fff;
+                border: solid 2px white;
+            }
+        }
     }
     .amp-ca-card-link {
         color: #8F8F8F;
