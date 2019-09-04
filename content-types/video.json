@@ -24,6 +24,16 @@
 		"title": "Autoplay",
 		"description": "Autoplay Video",
 		"type": "boolean"
+	},
+	"Controls": {
+		"title": "Controls",
+		"description": "Control visible",
+		"type": "boolean"
+	},
+	"Loop": {
+		"title": "Loop",
+		"description": "Loop Video",
+		"type": "boolean"
 	}
   }
 }
