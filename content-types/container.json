@@ -36,8 +36,7 @@
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/ugc.json",
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/promoList.json",
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/notebooksbilliger/content-types/nb-banner.json",
-                  "http://text-block.html",
-                  
+                  "http://text-block.html"
                 ]
              }
             }
