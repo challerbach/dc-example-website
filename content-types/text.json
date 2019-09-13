@@ -18,6 +18,16 @@
       "format": "markdown",
       "minLength": 0,
       "maxLength": 6000
-    }
+    },
+	"alignment": {
+		"title": "Text alignment",
+		"description": "",
+		"type": "string",
+		"enum": [
+			"left",
+			"center",
+			"right"
+		]
+	}
   }
 }
