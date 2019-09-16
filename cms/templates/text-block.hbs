@@ -1,5 +1,8 @@
 <div class="amp-text-block-wrapper">
-    <div class="amp-text-block">
+    <div class="amp-text-block" {{#if alignment}} align="{{alignment}}"{{/if}}>
+      {{#if editorialTitle}}
+      <h1>{{editorialTitle}}</h1>
+      {{/if}}
         {{#each paragraphs}}
             <p class="text-block__paragraph">{{this}}</p>
         {{/each}}

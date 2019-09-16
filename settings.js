@@ -19,7 +19,7 @@ module.exports = {
             route: "/mens",
             layout: "landing",
             slots: {
-                "content": "6ca12033-e9cc-4268-8d49-bf986c858bf0"
+                "content": "9d07598e-611c-4fc5-b58e-50061c419d09"
             }
         },
         {
