@@ -28,6 +28,16 @@
 			"center",
 			"right"
 		]
+	},
+	"padding": {
+		"title": "Distance from border",
+		"description": "",
+		"type": "string",
+		"enum": [
+			"10%",
+			"25%",
+			"50%"
+		]
 	}
   }
 }
