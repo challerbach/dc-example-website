@@ -40,7 +40,7 @@ module.exports = {
             route: "/furniture",
             layout: "landing",
             slots: {
-                "content": "78b2a5bf-764c-41c3-88ac-6ed88e85ff44"
+                "content": "15f6f19c-d89b-4bd9-b842-a94ff0f49c45"
             }
         },
         ,
