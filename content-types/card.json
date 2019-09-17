@@ -16,7 +16,7 @@
       "description": "Image used in the card",
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/image.json"
+          "$ref": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/image.json"
         }
       ]
     },
