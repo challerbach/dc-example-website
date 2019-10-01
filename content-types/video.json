@@ -21,19 +21,26 @@
       ]
     },
 	"Autoplay": {
-		"title": "Autoplay",
-		"description": "Autoplay Video",
-		"type": "boolean"
+	"title": "Autoplay",
+	"description": "Autoplay Video",
+	"type": "boolean"
 	},
 	"Controls": {
-		"title": "Controls",
-		"description": "Control visible",
-		"type": "boolean"
+	"title": "Controls",
+	"description": "Control visible",
+	"type": "boolean"
 	},
 	"Loop": {
-		"title": "Loop",
-		"description": "Loop Video",
-		"type": "boolean"
+	"title": "Loop",
+	"description": "Loop Video",
+	"type": "boolean"
+	},
+	"Link": {
+	"title": "Link",
+	"description": "Link video",
+	"type": "string",
+	"minLength": 0,
+	"maxLength": 200
 	}
   }
 }
