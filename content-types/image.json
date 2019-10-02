@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/image.json",
+  "id": "http://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/image.json",
   "title": "Image",
   "description": "Basic image with SEO information and allow roundels",
   "allOf": [
