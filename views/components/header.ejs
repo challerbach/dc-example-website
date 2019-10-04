@@ -9,6 +9,13 @@
         <!-- dynamic optimized style sheet resources -->
         <link rel="stylesheet" href="/public/css/main.css" media="screen, projection">
 
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="https://www.coop.se/assets/build/fonts.css?v=4.5376.0.0">
+        <link rel="stylesheet" href="https://www.coop.se/assets/build/app.css?v=4.5376.0.0">
+        <link rel="shortcut icon" href="https://www.coop.se/assets/icons/favicons/favicon.ico">
+        <!-- Custom CSS END -->
+
+
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -30,7 +37,7 @@
 
     <body>
         <div class="off-canvas">
-            <div class="mainContent">
+            <div class="mainContent Main-container Main-container--padding js-headerMain" style="max-width: 100%;">
                 <%- include('./navigation.ejs', {}); %>
 
                 <div class="amp-page">

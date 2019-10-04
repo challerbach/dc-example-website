@@ -12,7 +12,7 @@ module.exports = {
             route: "/womens",
             layout: "landing",
             slots: {
-                "content": "42003671-7128-44cc-ac49-98b0fad0f79d"
+                "content": "cd390834-d1e0-4b94-9e02-283b4ece71e5"
             }
         },
         {
@@ -26,7 +26,7 @@ module.exports = {
             route: "/beauty",
             layout: "landing",
             slots: {
-                "content": "6895dc4e-76a8-4451-b15c-a086e4591d3b"
+                "content": "3226c61d-2d7e-4a13-b75f-5113e6f1062a"
             }
         },
         {
