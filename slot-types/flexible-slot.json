@@ -35,7 +35,8 @@
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/ugc.json",
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/nb-banner.json",
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/blog.json",
-                  "http://text-block.html"
+                  "http://text-block.html",
+                  "http://recipe.html"
                 ]
               }
             }
