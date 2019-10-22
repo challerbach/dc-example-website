@@ -1,7 +1,8 @@
 {
-  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/master/content-types/image.json",
-  "title": "Image",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id": "http://image.json",
+
+	 "title": "Image",
   "description": "Basic image with SEO information and allow roundels",
   "allOf": [
     {
@@ -39,7 +40,7 @@
       "title": "Roundel",
       "description": "Roundel image",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/master/content-types/roundel.json"
+        "$ref": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/roundel.json"
       },
       "minItems": 0,
       "maxItems": 1,
@@ -54,10 +55,18 @@
         "Hotspots",
         "Static"
       ]
+    },
+    "width": {
+      "type": "string",
+      "title": "max width in px",
+      "description": "Value without px",
+      "minLength": 0,
+      "maxLength": 5
     }
   },
   "propertyOrder": [
     "image",
+    "width",
     "imageAltText",
     "seoText",
     "roundel",
