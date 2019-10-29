@@ -1,26 +1,28 @@
 <div ui-view="topNavigation" class="ng-scope">
     <div class="mobileNav hidden-lg hidden-md visible-sm visible-xs ng-scope">
-        <nav class="top-navigation row" style="background: rgb(255, 255, 255);">
+        <nav class="top-navigation row" style="background: #183353;">
             <div class="col-xs-3">
                 <button type="button" class="btn btn-link navbar-btn menu" ng-click="toggleOffCanvas()">
                     <span class="hyicon hyicon-menu"></span>
                 </button>
             </div>
             <div class="col-xs-5 text-center">
-                <a class="logo" href="/"><img src="https://www.coop.se/handla/_ui/responsive/theme-coop/images/logo.svg" height="46"></a>
+                <a class="logo" href="/"><img src="https://i1.adis.ws/i/presales/veikkaus_logo" height="46"></a>
 
             </div>
         </nav>
     </div>
     <div class="desktopNav hidden-xs hidden-sm visible-md visible-lg ng-scope">
-        <div class="row info" style="background: rgb(255, 255, 255);" textalign="center">
+        <div class="row info" style="background: #183353;" textalign="center">
             <div class="col-xs-2 logo navbar-padding navbar-padding-left">
                 <a class="logo" href="/">
-                <img height="52" alt="" src="https://www.coop.se/handla/_ui/responsive/theme-coop/images/logo.svg">
+                <img height="52" alt="" src="https://i1.adis.ws/i/presales/veikkaus_logo">
             </a>
           </div>
         </div>
-        <div class="row nav js-mainNav">
+
+      <div class="row nav js-mainNav">
+        <!--
             <div class="content-container">
                 <div class="navbar yamm navbar-default">
                     <ul class="nav navbar-nav">
@@ -49,7 +51,7 @@
                             Bank & betalkort
                             </a>
                         </li>
-<!--
+
                         <li ng-repeat="top_category in categories" class="dropdown yamm-fw ng-scope">
                             <a ui-sref="base.category( {catName: top_category.slug} )" class="js-megamenutoggle mainCategory categoryLevel ng-binding" href="/electricals">
                             SPECIALS
@@ -61,10 +63,13 @@
                             ABOUT L.O.V
                             </a>
                         </li>
-                        -->
+
                     </ul>
                 </div>
             </div>
+-->
         </div>
+
+
     </div>
 </div>
