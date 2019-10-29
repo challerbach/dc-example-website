@@ -1,0 +1,945 @@
+
+
+<div class="Bar Bar--global js-globalSearchBar u-noPrint" data-is-sticky="false">
+    <div class="Main-container Main-container--padding js-headerMain" style="max-width: 100%;">
+        <div class="Bar-content u-lg-block">
+            <div class="Grid Grid--dynamicWidth">
+                <div class="Grid-cell Grid-cell--grownWidth">
+                    <div class="Bar-search js-globalSearchDesktopContainer">
+                        <div class="Search Search--global Search--dropdown Search--dropdownAbsolute js-globalSearchDesktop">
+                            <div class="Search-content">
+                                <button type="button" class="Search-icon u-cursorPointer js-globalSearchIcon">
+                                    <svg role="img" alt="Search-icon">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/build/sprite.svg?=4.5376.0.0#search"></use>
+                                    </svg>
+                                </button>
+                                <input class="Search-input js-globalSearchInput" name="search" onfocus="this.removeAttribute('readonly');" readonly="" value="" type="search" placeholder="Sök recept, varor, butiker och artiklar">
+                                <button type="button" class="Search-clear js-globalSearchClear">
+                                    <svg role="img" alt="Clear-icon">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/build/sprite.svg?=4.5376.0.0#close"></use>
+                                    </svg>
+                                </button>
+                                <button type="button" class="Search-loader">
+                                    <div class="Loader Loader--medium Loader--balls js-loader u-hidden">
+                                        <div class="Loader-icon">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="js-searchAutocompleteResults"></div>
+                        </div>
+                    </div>
+                    <div class="Bar-cartButton">
+                        <button class="CartButton js-miniCartTrigger is-disabled" type="button" disabled="disabled">
+                            <div class="CartButton-icon">
+                                <svg role="img" alt="Varukorg">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/build/sprite.svg?=4.5376.0.0#cart"></use>
+                                </svg>
+                                <span class="Badge Badge--cart js-amount"></span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Bar-content u-flexAlignCenter u-lg-hidden js-globalSearchMobileContainer">
+             <!-- Handla Dark green hamburger menu button for mobile recipe filter menu -->
+            <div class="Bar-search Bar-search">
+                <div class="Search Search--global Search--dropdown Search--dropdownAbsolute js-globalSearchMobile ">
+                    <div class="Search-content">
+                        <button type="button" class="Search-icon u-cursorPointer js-globalSearchIcon">
+                            <svg role="img" alt="Search-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/build/sprite.svg?=4.5376.0.0#search"></use>
+                            </svg>
+                        </button>
+                        <input class="Search-input js-globalSearchInput" onfocus="this.removeAttribute('readonly');" readonly="" value="" type="search" placeholder="Sök recept, varor, butiker och artiklar">
+                        <button type="button" class="Search-clear js-globalSearchClear">
+                            <svg role="img" alt="Clear-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/build/sprite.svg?=4.5376.0.0#close"></use>
+                            </svg>
+                        </button>
+                        <button type="button" class="Search-loader">
+                            <div class="Loader Loader--medium Loader--balls js-loader u-hidden">
+                                <div class="Loader-icon">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="js-searchAutocompleteResults"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <div class="Main-container Main-container--padding js-headerMain" style="max-width: 100%;">
+
+    <div class="Section Section--margin">
+        <div class="Grid Grid--gutterHxlg Grid--recipePage">
+            <div class="Grid-cell Grid-cell--fixedWidth">
+                <div class="js-sidebarNavOffset">
+                    <!--eri-no-index-->
+{{#with img}}
+<div class="Hero Hero--recipePage u-lg-marginBmd">
+  <div class="Hero-media Hero-media--recipePage" style="background-image: url(//{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}.webp}});"></div>
+<!--
+  <picture class="">
+      {{#compare display '==' 'Static'}}
+          <img src="//neildemo.a.bigcontent.io/v1/static/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}" class="amp-ca-image-pic" {{#if imageAltText}} alt="{{imageAltText}}" {{/if}} {{#if seoText}} title="{{seoText}}" {{/if}} />
+      {{/compare}}
+      {{#compare display '!=' 'Static'}}
+      <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}.webp?w=1600{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=2.6:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}.webp?w=3200{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=2.6:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 2x" media="(min-width: 1280px)" type="image/webp">
+      <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}?w=1600{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=2.6:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}?w=3200{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=2.6:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 2x" media="(min-width: 1280px)">
+
+      <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}.webp?w=1280{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=2:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}.webp?w=2560{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=2:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 2x" media="(min-width: 1024px)" type="image/webp">
+      <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}?w=1280{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=2:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}?w=2560{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=2:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 2x" media="(min-width: 1024px)">
+
+      <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}.webp?w=1024{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=1.5:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}.webp?w=2048{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=1.5:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 2x" media="(min-width: 768px)" type="image/webp">
+      <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}?w=1024{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=1.5:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}?w=2048{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=1.5:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 2x" media="(min-width: 768px)">
+
+      <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}.webp?w=768{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=1:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}.webp?w=1536{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=1:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 2x" media="(max-width: 768px)" type="image/webp">
+      <source srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}?w=768{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=1:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}?w=1536{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=1:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 2x" media="(max-width: 768px)">
+
+        <img src="//{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}?w=1600{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=2.6:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true" srcset="//{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}.webp?w=1600{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=2.6:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}.webp?w=3200{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=2.6:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 2x,
+               //{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}?w=1600{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=2.6:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 1x, //{{image.defaultHost}}/i/{{image.endpoint}}/{{image.name}}{{#if seoText}}/{{escape seoText}}{{/if}}?w=3200{{#compare display '==' 'Point of Interest'}}&$poi$&aspect=2.6:1{{/compare}}{{> roundel }}&upscale=false&fmt.jpeg.interlaced=true 2x" class="amp-ca-image-pic" {{#if imageAltText}} alt="{{imageAltText}}" {{/if}} {{#if seoText}} title="{{seoText}}" {{/if}} />
+      {{/compare}}
+  </picture>
+-->
+</div>
+{{/with}}
+                    <!--/eri-no-index-->
+                </div>
+                <div class="SidebarNav SidebarNav--recipePage js-sidebarNav">
+            <div class="SidebarNav-container u-flexIE11 js-sidebarNavContainer">
+                <div class="SidebarNav-content js-sidebarNavContent js-fixedScrollable">
+                    <div class="IngredientList">
+    <!--eri-no-index-->
+    <div class="IngredientList-header u-noPrint">
+      <button data-external-id="4000476" data-recipe-name="Kycklinggryta med oliver och tomatcouscous" data-on-recipe-page="true" class="js-buyRecipeItem Button Button--green Button--medium Button--radius">Köp ingredienserna</button>
+    </div>
+    <!--/eri-no-index-->
+
+    <div class="IngredientList-container">
+            <div class="IngredientList-content u-paddingAxlg u-paddingBz">
+
+                <!--eri-no-index-->
+                <!--<span class="u-textSmall u-textWeightNormal u-marginBsm u-print u-hidden">15 <span class="u-textSmall u-textWeightNormal">st</span></span>-->
+                <!--/eri-no-index-->
+                {{#each ingredient}}
+                <ul class="List List--section">
+                        <li class="List-heading u-flex u-flexDirectionRow u-flexJustifySpaceBetween u-flexAlignCenter">
+                            <span class="u-textWeightBold" style="font-size: 22px;">{{list}}</span>
+                        </li>
+                        <li class="u-borderBottomGrayLight3"></li>
+                        {{#each items}}
+                        <li class="u-paddingHxsm u-colorBase" style="font-size: 14px;">
+                                <span></span><span class="u-textWeightBold">{{this}}</span>
+                        </li>
+                        {{/each}}
+                </ul>
+                {{/each}}
+            </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+
+            </div>
+            <div class="Grid-cell Grid-cell--grownWidth">
+                <div class="Grid Grid--gutterV">
+                    <div class="Grid-cell">
+
+<div class="u-paddingVxlg u-paddingTlg u-sm-paddingTxlg u-paddingHlg u-lg-paddingHxlg u-lg-paddingBz u-bgWhite">
+    {{#with description}}
+    <h1 class="u-textFamilySecondary u-marginBxsm" itemprop="name" style="font-size: 2em;">
+    {{editorialTitle}}
+    </h1>
+
+<!-- Ratings start -->
+    <div class="u-flex u-flexDirectionRow u-flexAlignCenter">
+            <div class="firefoxonly u-hidden">Betyg (1-5): </div>
+            <div class="Rating Rating--larger">
+                <div class="Rating-icon">
+                    <svg role="img" alt="Rating">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.coop.se/assets/build/sprite.svg#grading"></use>
+                    </svg>
+                </div>
+                <div class="Rating-icon Rating-icon--active" style="width: 65.45%">
+                    <svg role="img" alt="Rating">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.coop.se/assets/build/sprite.svg#grading"></use>
+                    </svg>
+                </div>
+            </div>
+            <span class="u-colorBaseMid u-marginLsm u-textSmall" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+                <span itemprop="ratingValue">3.27</span> (<span itemprop="reviewCount">11</span> betyg)
+            </span>
+            <div class="RecipeSocial-save u-marginLmd js-favoriteRecipe u-noPrint" data-recipe-id="12074" data-recipe-name="Kycklinggryta med oliver och tomatcouscous" data-is-favorite="false">
+                <button type="button" class="Link js-favorite">
+                    <span>
+                        <svg class="Icon RecipeSocial-saveHeart u-marginRxsm js-favoriteHeart " role="img" alt="Hjärta">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.coop.se/assets/build/sprite.svg#favorite2"></use>
+                        </svg>
+                    </span>
+                </button>
+                <div class="RecipeSocial-saveTooltip js-save-tooltip u-hidden">
+                    <div class="Tooltip Tooltip--saveSmall Tooltip--topArrow Tooltip--centerArrow">
+                        <span class="js-save-tooltip-text"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- Ratings End -->
+
+
+    {{#each paragraphs}}
+    <div class="" {{#if alignment}} align="{{alignment}}"{{/if}}>
+    <p class="u-colorBaseMid" itemprop="description" style="font-size: 18px;">
+    {{this}}
+    </p>
+    </div>
+    {{/each}}
+    {{/with}}
+    <!--eri-no-index-->
+<!-- Prep time
+    <div class="u-marginTlg">
+        <div class="Grid Grid--gutterHxlg Grid--gutterVxsm Grid--fit">
+                        <div class="Grid-cell Grid-cell--fit u-borderRight2">
+                                <span class="u-textWeightLight u-xxxsm-to-sm-textMedium">Tillagningstid: <span class="u-textWeightBold"><meta itemprop="cookTime" content="PT45M">45 min</span></span>
+                        </div>
+                <div class="Grid-cell Grid-cell--fit">
+                    <span class="u-textWeightLight u-xxxsm-to-sm-textMedium">4 portioner</span>
+                </div>
+        </div>
+    </div>
+-->
+    <!--/eri-no-index-->
+</div>
+
+                        <!--eri-no-index-->
+    <div class="u-paddingVxlg u-paddingHlg u-lg-paddingHxlg u-paddingTlg u-bgWhite">
+
+    <h2 class="Heading Heading--h3 Heading--block u-lg-flex u-marginBsm u-paddingHz u-borderBottomGrayLight3" style="font-size: 22px;">Gör så här</h2>
+
+    {{#each instruction}}
+    <div itemprop="recipeInstructions">
+      {{#if preplist}}
+                <h2 class="" style="font-size: 22px;font-weight: bold;">{{preplist}}</h2>
+                <div class="u-borderBottomGrayLight3 u-marginTxxsm u-marginBmd"></div>
+      {{/if}}
+                <ol class="List List--orderedRecipe u-textNormal" style="padding-left: 30px;">
+                    {{#each instructions}}
+                    <li class="u-colorBase" style="font-size: 15px;">
+                      {{this}}
+                    </li>
+                    {{/each}}
+                </ol>
+    </div>
+{{/each}}
+</div>
+
+
+<!--
+                        <div class="u-paddingVmd u-paddingHxlg u-borderTop u-bgWhite  u-textSmall u-noPrint">
+
+<div class="RecipeSocial u-flex u-flexJustifySpaceBetween">
+    <div class="RecipeSocial-buy u-flex240 u-textLeft">
+            <a href="/logga-in/?returnUrl=/recept/recept-a-o/k/koettbullar-half-and-half-med-spaghetti-och-tomatsaas-lotta-lundgren/" class="Link">
+                <svg class="Icon Icon--recipe u-alignMiddle u-marginRxsm" role="img" alt="Listor">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.coop.se/assets/build/sprite.svg#lists"></use>
+                </svg>
+                <span class="u-textFamilyPrimaryLight u-textNormal">Lägg i inköpslista</span>
+            </a>
+        <div class="RecipeSocial-buyListTooltip js-buyListBanner u-hidden">
+            <div class="Tooltip Tooltip--buyListSmall Tooltip--topArrow Tooltip--centerArrow u-textCenter">
+                <span class="js-buylist-tooltip-text"></span>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="Link js-print u-flex240" onclick="window.print();">
+        <svg class="Icon Icon--recipe u-alignMiddle u-marginRxsm" role="img" alt="Hjärta">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.coop.se/assets/build/sprite.svg#print"></use>
+        </svg>
+        <span class="u-textFamilyPrimaryLight u-textNormal js-printRecipe" data-recipe-name="K&#246;ttbullar half and half med spaghetti och tomats&#229;s - Lotta Lundgren">Skriv ut</span>
+    </button>
+    <div class="RecipeSocial-share u-flex240 u-textRight">
+        <a href="#" class="Link js-share" data-controller="recipe/recipeSocialShare">
+            <svg class="Icon Icon--recipe u-alignMiddle u-marginRxsm" role="img" alt="Hjärta">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.coop.se/assets/build/sprite.svg#share"></use>
+            </svg>
+            <span class="u-textFamilyPrimaryLight u-textNormal">Dela</span>
+        </a>
+        <div class="RecipeSocial-sharePopup js-sharePopup u-hidden">
+            <div class="Tooltip Tooltip--small Tooltip--topArrow Tooltip--centerArrow u-textCenter ">
+                <span class="RecipeSocial-shareTitle">Dela detta recept!</span>
+                <div class="RecipeSocial-shareIcons">
+                    <a href="http://www.facebook.com/share.php?u=http://bit.ly/vOKpgC" target="_blank" class="u-marginAxxxsm js-shareLinks" data-recipe-name="K&#246;ttbullar half and half med spaghetti och tomats&#229;s - Lotta Lundgren" data-share-name="Facebook">
+                        <svg class="u-heightXXsm u-widthXXsm u-alignMiddle u-marginRxsm" role="img" alt="Facebook">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.coop.se/assets/build/sprite.svg#social-facebook"></use>
+                        </svg>
+                    </a>
+                    <a class="u-marginAxxxsm js-shareLinks" target="_blank" data-pin-do="buttonBookmark" data-pin-custom="true" href="https://www.pinterest.com/pin/create/button/" data-recipe-name="K&#246;ttbullar half and half med spaghetti och tomats&#229;s - Lotta Lundgren" data-share-name="Pintrest">
+                        <svg class="u-heightXXsm u-widthXXsm u-alignMiddle u-marginRxsm" role="img" alt="Pinterest">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.coop.se/assets/build/sprite.svg#social-pinterest"></use>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/home?status=123" target="_blank" class="u-marginAxxxsm js-shareLinks" data-recipe-name="K&#246;ttbullar half and half med spaghetti och tomats&#229;s - Lotta Lundgren" data-share-name="Twitter">
+                        <svg class="u-heightXXsm u-widthXXsm u-alignMiddle u-marginRxsm" role="img" alt="Twitter">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.coop.se/assets/build/sprite.svg#twitter"></use>
+                        </svg>
+                    </a>
+
+                    <a href="mailto:?Subject=K&#246;ttbullar half and half med spaghetti och tomats&#229;s - Lotta Lundgren&Body=%0D%0A%0D%0AKolla in det h&#228;r goda receptet fr&#229;n Coop:%0D%0A%0D%0Ahttps://www.coop.se/recept/kottbullar-half-and-half-med-spaghetti-och-tomatsas-lotta-lundgren%0D%0A%0D%0A" class="u-marginAxxxsm js-shareLinks" data-recipe-name="K&#246;ttbullar half and half med spaghetti och tomats&#229;s - Lotta Lundgren" data-share-name="Mail">
+                        <svg class="Icon u-heightXXsm u-widthXXsm u-alignMiddle u-marginRxsm" role="img" alt="Mailto">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.coop.se/assets/build/sprite.svg#social-mail"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                        </div>
+
+-->
+
+                        <!--/eri-no-index-->
+                    </div>
+
+                    <!--eri-no-index-->
+                    <!-- Moduler after description-->
+
+<!--
+                        <div class="Grid-cell u-noPrint">
+                            <div><div class="Grid-cell u-sizeFull">
+
+<a href="/recept/4-personer-80-kr/kostnadsberakning/kottbullar-half-and-half-med-spaghetti-och-tomatsas/" class="Block Block--horizontalBigPadding">
+    <div class="Block-imageContainer">
+        <div class="Block-image" style="background-image:url('https://www.coop.se/globalassets/1.-recept/receptkort/4for80-kostnadsberakning.jpg');"></div>
+    </div>
+    <div class="Block-content">
+            <h2 class="Block-heading">Kostnadsber&#228;kning</h2>
+                    <p>Detta är ett lättlagat recept som inte kostar mer än 80 kronor för fyra personer.</p>
+                    <div class="Link Link--green" href="/recept/4-personer-80-kr/kostnadsberakning/kottbullar-half-and-half-med-spaghetti-och-tomatsas/">Se hur vi har r&#228;knat</div>
+    </div>
+</a>
+</div></div>
+                        </div>
+-->
+
+                    <!-- Moduler after comments-->
+
+                  <!-- RECO START-->
+
+                    <div class="Grid-cell u-sizeFull">
+
+
+
+                        <div class="js-richRelevanceProducts u-sizeFull" data-list="Aktuella erbjudande" data-placement="generic_page.generic_recs1" data-slider-active="true" data-parent-page-type="Default">
+
+                            <div class="u-flex u-flexJustifySpaceBetween u-paddingVsm u-flexAlignCenter">
+                                <h2 class="Heading Heading--h4 u-marginAz js-strategyMessage">Populära nyheter</h2>
+                                    <a class="Link Link--green" href="/handla-online/aktuella-erbjudanden/">Visa alla</a>
+                            </div>
+
+                                <div class="Swiper Swiper--product js-productSwiper is-loaded">
+                                    <div class="Swiper-container js-swiperContainer Swiper-container--horizontal Swiper-container--autoheight" style="">
+
+                                        <div class="Swiper-wrapper js-items" style="height: 376px; transform: translate3d(0px, 0px, 0px);"><div class="Swiper-slide js-swiperSlide is-visible is-active" style="width: 159px; margin-right: 1px;"><article class="ItemTeaser js-product" itemscope="" itemtype="http://schema.org/Product">
+
+                        <div class="ItemTeaser-content">
+                            <a class="ItemTeaser-link ItemTeaser-link--buyable js-asyncLink js-link" href="/handla/p/7310865877475"></a>
+                            <div class="ItemTeaser-media">
+
+                                <div class="ItemTeaser-image">
+                    <img class="" alt="Yoghurt Mini Jordgubb 0,1%" itemprop="image" draggable="false" src="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_90,c_lpad,g_center,h_222,w_222/382088.jpg" data-src-set="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_70,c_lpad,g_center,h_444,w_444/382088.jpg 2x" data-img-src="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_90,c_lpad,g_center,h_222,w_222/382088.jpg" srcset="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_70,c_lpad,g_center,h_444,w_444/382088.jpg 2x">            </div>
+
+                                <div class="ItemTeaser-promos">
+
+
+
+                                    <div class="ItemTeaser-splash">
+                    <p class="Splash Splash--medium">
+                        <svg role="img" alt="Bakgrund" class="Splash-bg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/build/sprite.svg#splash"></use>
+                        </svg>
+                        <span class="Splash-content">
+
+                        <span class="Splash-priceLarge">
+                            15
+                        </span>
+
+
+                            <span class="Splash-priceSupSub">
+                                <span class="Splash-priceSup">00</span>
+                                <span class="Splash-priceSub">/st</span>
+                            </span>
+                        </span>
+                    </p>                </div>
+
+
+
+
+
+                                </div>
+
+                            </div>
+                            <div class="ItemTeaser-info">
+                                <h3 class="ItemTeaser-heading">Yoghurt Mini Jordgubb 0,1%</h3>
+                                <p class="ItemTeaser-description">
+
+
+
+                                    <span class="ItemTeaser-brand">Yoggi®</span>
+                                    1000 G.
+                                    Jfr-pris 17.95/kr/kg.
+                                </p>
+
+
+
+                                <div class="ItemTeaser-cta">
+                                    <span class="ItemTeaser-tag ItemTeaser-tag--medlem">Medlemspris</span>
+                                    <p class="ItemTeaser-price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <span class="u-colorRed u-textXLarge">15:-<span class="u-colorRed u-textXSmall">/st</span></span>
+                                        <span class="ItemTeaser-priceValue js-price u-textLineThrough u-textXSmall" aria-label="Pris" itemprop="price" content="17:95">17:95 /st</span>
+                                    </p>
+                                </div>
+
+                                <div class="ItemTeaser-button js-buttonView">
+                                    <button type="button" class="Button Button--green Button--medium Button--full Button--radius u-hidden js-kop">Köp</button>
+                                    <fieldset class="AddToCart js-buttonContainer js-changeButtonsContainer">
+                                        <div class="AddToCart-container">
+                                            <button type="button" class="AddToCart-button AddToCart-button--subtract js-subtract" tabindex="-1" aria-label="Minska antal"></button>
+                                            <input class="AddToCart-input js-input" type="number" pattern="\d*" min="0" max="10000" value="0">
+                                            <button type="button" class="AddToCart-button AddToCart-button--add is-active js-add" tabindex="-1" aria-label="Öka antal"></button>
+                                            <button type="button" class="AddToCart-button AddToCart-button--confirm is-confirm u-hidden js-ok" tabindex="-1"></button>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </article></div><div class="Swiper-slide js-swiperSlide is-visible is-next" style="width: 159px; margin-right: 1px;"><article class="ItemTeaser js-product" itemscope="" itemtype="http://schema.org/Product">
+
+                        <div class="ItemTeaser-content">
+                            <a class="ItemTeaser-link ItemTeaser-link--buyable js-asyncLink js-link" href="/handla/p/7310865877468"></a>
+                            <div class="ItemTeaser-media">
+
+                                <div class="ItemTeaser-image">
+                    <img class="" alt="Yoghurt Mini Vanilj 0,1%" itemprop="image" draggable="false" src="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_90,c_lpad,g_center,h_222,w_222/382086.jpg" data-src-set="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_70,c_lpad,g_center,h_444,w_444/382086.jpg 2x" data-img-src="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_90,c_lpad,g_center,h_222,w_222/382086.jpg" srcset="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_70,c_lpad,g_center,h_444,w_444/382086.jpg 2x">            </div>
+
+                                <div class="ItemTeaser-promos">
+
+
+
+                                    <div class="ItemTeaser-splash">
+                    <p class="Splash Splash--medium">
+                        <svg role="img" alt="Bakgrund" class="Splash-bg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/build/sprite.svg#splash"></use>
+                        </svg>
+                        <span class="Splash-content">
+
+                        <span class="Splash-priceLarge">
+                            15
+                        </span>
+
+
+                            <span class="Splash-priceSupSub">
+                                <span class="Splash-priceSup">00</span>
+                                <span class="Splash-priceSub">/st</span>
+                            </span>
+                        </span>
+                    </p>                </div>
+
+
+
+
+
+                                </div>
+
+                            </div>
+                            <div class="ItemTeaser-info">
+                                <h3 class="ItemTeaser-heading">Yoghurt Mini Vanilj 0,1%</h3>
+                                <p class="ItemTeaser-description">
+
+
+
+                                    <span class="ItemTeaser-brand">Yoggi®</span>
+                                    1000 G.
+                                    Jfr-pris 17.95/kr/kg.
+                                </p>
+
+
+
+                                <div class="ItemTeaser-cta">
+                                    <span class="ItemTeaser-tag ItemTeaser-tag--medlem">Medlemspris</span>
+                                    <p class="ItemTeaser-price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <span class="u-colorRed u-textXLarge">15:-<span class="u-colorRed u-textXSmall">/st</span></span>
+                                        <span class="ItemTeaser-priceValue js-price u-textLineThrough u-textXSmall" aria-label="Pris" itemprop="price" content="17:95">17:95 /st</span>
+                                    </p>
+                                </div>
+
+                                <div class="ItemTeaser-button js-buttonView">
+                                    <button type="button" class="Button Button--green Button--medium Button--full Button--radius u-hidden js-kop">Köp</button>
+                                    <fieldset class="AddToCart js-buttonContainer js-changeButtonsContainer">
+                                        <div class="AddToCart-container">
+                                            <button type="button" class="AddToCart-button AddToCart-button--subtract js-subtract" tabindex="-1" aria-label="Minska antal"></button>
+                                            <input class="AddToCart-input js-input" type="number" pattern="\d*" min="0" max="10000" value="0">
+                                            <button type="button" class="AddToCart-button AddToCart-button--add is-active js-add" tabindex="-1" aria-label="Öka antal"></button>
+                                            <button type="button" class="AddToCart-button AddToCart-button--confirm is-confirm u-hidden js-ok" tabindex="-1"></button>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </article></div><div class="Swiper-slide js-swiperSlide is-visible" style="width: 159px; margin-right: 1px;"><article class="ItemTeaser js-product" itemscope="" itemtype="http://schema.org/Product">
+
+                        <div class="ItemTeaser-content">
+                            <a class="ItemTeaser-link ItemTeaser-link--buyable js-asyncLink js-link" href="/handla/p/5000112639629"></a>
+                            <div class="ItemTeaser-media">
+
+                                <div class="ItemTeaser-image">
+                    <img class="" alt="Fanta Zero Exotic" itemprop="image" draggable="false" src="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_90,c_lpad,g_center,h_222,w_222/374029.jpg" data-src-set="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_70,c_lpad,g_center,h_444,w_444/374029.jpg 2x" data-img-src="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_90,c_lpad,g_center,h_222,w_222/374029.jpg" srcset="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_70,c_lpad,g_center,h_444,w_444/374029.jpg 2x">            </div>
+
+                                <div class="ItemTeaser-promos">
+
+
+
+                                    <div class="ItemTeaser-splash">
+                    <p class="Splash Splash--medium">
+                        <svg role="img" alt="Bakgrund" class="Splash-bg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/build/sprite.svg#splash"></use>
+                        </svg>
+                        <span class="Splash-content">
+                            <span class="Splash-pricePre">3 för</span>
+
+                        <span class="Splash-priceLarge">
+                            33:-
+                        </span>
+
+
+                        </span>
+                    </p>                </div>
+
+
+
+
+
+                                </div>
+
+                            </div>
+                            <div class="ItemTeaser-info">
+                                <h3 class="ItemTeaser-heading">Fanta Zero Exotic</h3>
+                                <p class="ItemTeaser-description">
+
+
+
+                                    <span class="ItemTeaser-brand">Fanta Zero</span>
+                                    150 CL.
+                                    Jfr-pris 11.3/kr/lit. <span class="ItemTeaser-extra">Pant 2:-</span>
+                                </p>
+
+
+
+                                <div class="ItemTeaser-cta">
+                                    <span class="ItemTeaser-restrictions">Max 2/hushåll</span>
+                                    <p class="ItemTeaser-price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <span class="ItemTeaser-priceValue js-price" aria-label="Pris" itemprop="price" content="16:95">16:95 <span class="u-textXSmall">/st</span></span>
+                                    </p>
+                                </div>
+
+                                <div class="ItemTeaser-button js-buttonView">
+                                    <button type="button" class="Button Button--green Button--medium Button--full Button--radius u-hidden js-kop">Köp</button>
+                                    <fieldset class="AddToCart js-buttonContainer js-changeButtonsContainer">
+                                        <div class="AddToCart-container">
+                                            <button type="button" class="AddToCart-button AddToCart-button--subtract js-subtract" tabindex="-1" aria-label="Minska antal"></button>
+                                            <input class="AddToCart-input js-input" type="number" pattern="\d*" min="0" max="10000" value="0">
+                                            <button type="button" class="AddToCart-button AddToCart-button--add is-active js-add" tabindex="-1" aria-label="Öka antal"></button>
+                                            <button type="button" class="AddToCart-button AddToCart-button--confirm is-confirm u-hidden js-ok" tabindex="-1"></button>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </article></div><div class="Swiper-slide js-swiperSlide is-visible" style="width: 159px; margin-right: 1px;"><article class="ItemTeaser js-product" itemscope="" itemtype="http://schema.org/Product">
+
+                        <div class="ItemTeaser-content">
+                            <a class="ItemTeaser-link ItemTeaser-link--buyable js-asyncLink js-link" href="/handla/p/5000112642223"></a>
+                            <div class="ItemTeaser-media">
+
+                                <div class="ItemTeaser-image">
+                    <img class="" alt="Coca Cola Zero Cinnamon" itemprop="image" draggable="false" src="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_90,c_lpad,g_center,h_222,w_222/382039.jpg" data-src-set="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_70,c_lpad,g_center,h_444,w_444/382039.jpg 2x" data-img-src="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_90,c_lpad,g_center,h_222,w_222/382039.jpg" srcset="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_70,c_lpad,g_center,h_444,w_444/382039.jpg 2x">            </div>
+
+                                <div class="ItemTeaser-promos">
+
+
+
+                                    <div class="ItemTeaser-splash">
+                    <p class="Splash Splash--medium">
+                        <svg role="img" alt="Bakgrund" class="Splash-bg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/build/sprite.svg#splash"></use>
+                        </svg>
+                        <span class="Splash-content">
+                            <span class="Splash-pricePre">3 för</span>
+
+                        <span class="Splash-priceLarge">
+                            33:-
+                        </span>
+
+
+                        </span>
+                    </p>                </div>
+
+
+
+
+
+                                </div>
+
+                            </div>
+                            <div class="ItemTeaser-info">
+                                <h3 class="ItemTeaser-heading">Coca Cola Zero Cinnamon</h3>
+                                <p class="ItemTeaser-description">
+
+
+
+                                    <span class="ItemTeaser-brand">Coca-Cola Zero</span>
+                                    150 CL.
+                                    Jfr-pris 11.3/kr/lit. <span class="ItemTeaser-extra">Pant 2:-</span>
+                                </p>
+
+
+
+                                <div class="ItemTeaser-cta">
+                                    <span class="ItemTeaser-restrictions">Max 2/hushåll</span>
+                                    <p class="ItemTeaser-price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <span class="ItemTeaser-priceValue js-price" aria-label="Pris" itemprop="price" content="16:95">16:95 <span class="u-textXSmall">/st</span></span>
+                                    </p>
+                                </div>
+
+                                <div class="ItemTeaser-button js-buttonView">
+                                    <button type="button" class="Button Button--green Button--medium Button--full Button--radius u-hidden js-kop">Köp</button>
+                                    <fieldset class="AddToCart js-buttonContainer js-changeButtonsContainer">
+                                        <div class="AddToCart-container">
+                                            <button type="button" class="AddToCart-button AddToCart-button--subtract js-subtract" tabindex="-1" aria-label="Minska antal"></button>
+                                            <input class="AddToCart-input js-input" type="number" pattern="\d*" min="0" max="10000" value="0">
+                                            <button type="button" class="AddToCart-button AddToCart-button--add is-active js-add" tabindex="-1" aria-label="Öka antal"></button>
+                                            <button type="button" class="AddToCart-button AddToCart-button--confirm is-confirm u-hidden js-ok" tabindex="-1"></button>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </article></div><div class="Swiper-slide js-swiperSlide is-visible" style="width: 159px; margin-right: 1px;"><article class="ItemTeaser js-product" itemscope="" itemtype="http://schema.org/Product">
+
+                        <div class="ItemTeaser-content">
+                            <a class="ItemTeaser-link ItemTeaser-link--buyable js-asyncLink js-link" href="/handla/p/5000112642629"></a>
+                            <div class="ItemTeaser-media">
+
+                                <div class="ItemTeaser-image">
+                    <img class="" alt="Fanta Dark Mystery" itemprop="image" draggable="false" src="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_90,c_lpad,g_center,h_222,w_222/382040.jpg" data-src-set="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_70,c_lpad,g_center,h_444,w_444/382040.jpg 2x" data-img-src="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_90,c_lpad,g_center,h_222,w_222/382040.jpg" srcset="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_70,c_lpad,g_center,h_444,w_444/382040.jpg 2x">            </div>
+
+                                <div class="ItemTeaser-promos">
+
+
+
+                                    <div class="ItemTeaser-splash">
+                    <p class="Splash Splash--medium">
+                        <svg role="img" alt="Bakgrund" class="Splash-bg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/build/sprite.svg#splash"></use>
+                        </svg>
+                        <span class="Splash-content">
+                            <span class="Splash-pricePre">3 för</span>
+
+                        <span class="Splash-priceLarge">
+                            33:-
+                        </span>
+
+
+                        </span>
+                    </p>                </div>
+
+
+
+
+
+                                </div>
+
+                            </div>
+                            <div class="ItemTeaser-info">
+                                <h3 class="ItemTeaser-heading">Fanta Dark Mystery</h3>
+                                <p class="ItemTeaser-description">
+
+
+
+                                    <span class="ItemTeaser-brand">Fanta</span>
+                                    150 CL.
+                                    Jfr-pris 11.3/kr/lit. <span class="ItemTeaser-extra">Pant 2:-</span>
+                                </p>
+
+
+
+                                <div class="ItemTeaser-cta">
+                                    <span class="ItemTeaser-restrictions">Max 2/hushåll</span>
+                                    <p class="ItemTeaser-price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <span class="ItemTeaser-priceValue js-price" aria-label="Pris" itemprop="price" content="16:95">16:95 <span class="u-textXSmall">/st</span></span>
+                                    </p>
+                                </div>
+
+                                <div class="ItemTeaser-button js-buttonView">
+                                    <button type="button" class="Button Button--green Button--medium Button--full Button--radius u-hidden js-kop">Köp</button>
+                                    <fieldset class="AddToCart js-buttonContainer js-changeButtonsContainer">
+                                        <div class="AddToCart-container">
+                                            <button type="button" class="AddToCart-button AddToCart-button--subtract js-subtract" tabindex="-1" aria-label="Minska antal"></button>
+                                            <input class="AddToCart-input js-input" type="number" pattern="\d*" min="0" max="10000" value="0">
+                                            <button type="button" class="AddToCart-button AddToCart-button--add is-active js-add" tabindex="-1" aria-label="Öka antal"></button>
+                                            <button type="button" class="AddToCart-button AddToCart-button--confirm is-confirm u-hidden js-ok" tabindex="-1"></button>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </article></div><div class="Swiper-slide js-swiperSlide is-visible" style="width: 159px; margin-right: 1px;"><article class="ItemTeaser js-product" itemscope="" itemtype="http://schema.org/Product">
+
+                        <div class="ItemTeaser-content">
+                            <a class="ItemTeaser-link ItemTeaser-link--buyable js-asyncLink js-link" href="/handla/p/7310960038115"></a>
+                            <div class="ItemTeaser-media">
+
+                                <div class="ItemTeaser-image">
+                    <img class="" alt="Torskfilé" itemprop="image" draggable="false" src="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_90,c_lpad,g_center,h_222,w_222/376346.jpg" data-src-set="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_70,c_lpad,g_center,h_444,w_444/376346.jpg 2x" data-img-src="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_90,c_lpad,g_center,h_222,w_222/376346.jpg" srcset="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_70,c_lpad,g_center,h_444,w_444/376346.jpg 2x">            </div>
+
+                                <div class="ItemTeaser-promos">
+
+
+
+                                    <div class="ItemTeaser-splash">
+                    <p class="Splash Splash--medium">
+                        <svg role="img" alt="Bakgrund" class="Splash-bg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/build/sprite.svg#splash"></use>
+                        </svg>
+                        <span class="Splash-content">
+
+                        <span class="Splash-priceLarge">
+                            32
+                        </span>
+
+
+                            <span class="Splash-priceSupSub">
+                                <span class="Splash-priceSup">90</span>
+                                <span class="Splash-priceSub">/st</span>
+                            </span>
+                        </span>
+                    </p>                </div>
+
+
+
+
+
+                                </div>
+
+                            </div>
+                            <div class="ItemTeaser-info">
+                                <h3 class="ItemTeaser-heading">Torskfilé</h3>
+                                <p class="ItemTeaser-description">
+
+
+
+                                    <span class="ItemTeaser-brand">Dafgårds</span>
+                                    380 G.
+                                    Jfr-pris 101.32/kr/kg.
+                                </p>
+
+
+
+                                <div class="ItemTeaser-cta">
+                                    <p class="ItemTeaser-price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <span class="u-colorRed u-textXLarge">32:90<span class="u-colorRed u-textXSmall">/st</span></span>
+                                        <span class="ItemTeaser-priceValue js-price u-textLineThrough u-textXSmall" aria-label="Pris" itemprop="price" content="38:50">38:50 /st</span>
+                                    </p>
+                                </div>
+
+                                <div class="ItemTeaser-button js-buttonView">
+                                    <button type="button" class="Button Button--green Button--medium Button--full Button--radius u-hidden js-kop">Köp</button>
+                                    <fieldset class="AddToCart js-buttonContainer js-changeButtonsContainer">
+                                        <div class="AddToCart-container">
+                                            <button type="button" class="AddToCart-button AddToCart-button--subtract js-subtract" tabindex="-1" aria-label="Minska antal"></button>
+                                            <input class="AddToCart-input js-input" type="number" pattern="\d*" min="0" max="10000" value="0">
+                                            <button type="button" class="AddToCart-button AddToCart-button--add is-active js-add" tabindex="-1" aria-label="Öka antal"></button>
+                                            <button type="button" class="AddToCart-button AddToCart-button--confirm is-confirm u-hidden js-ok" tabindex="-1"></button>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </article></div><div class="Swiper-slide js-swiperSlide is-visible" style="width: 159px; margin-right: 1px;"><article class="ItemTeaser js-product" itemscope="" itemtype="http://schema.org/Product">
+
+                        <div class="ItemTeaser-content">
+                            <a class="ItemTeaser-link ItemTeaser-link--buyable js-asyncLink js-link" href="/handla/p/5000112642698"></a>
+                            <div class="ItemTeaser-media">
+
+                                <div class="ItemTeaser-image">
+                    <img class="" alt="Coca Cola Citron" itemprop="image" draggable="false" src="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_90,c_lpad,g_center,h_222,w_222/374012.jpg" data-src-set="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_70,c_lpad,g_center,h_444,w_444/374012.jpg 2x" data-img-src="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_90,c_lpad,g_center,h_222,w_222/374012.jpg" srcset="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_70,c_lpad,g_center,h_444,w_444/374012.jpg 2x">            </div>
+
+                                <div class="ItemTeaser-promos">
+
+
+
+                                    <div class="ItemTeaser-splash">
+                    <p class="Splash Splash--medium">
+                        <svg role="img" alt="Bakgrund" class="Splash-bg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/build/sprite.svg#splash"></use>
+                        </svg>
+                        <span class="Splash-content">
+                            <span class="Splash-pricePre">3 för</span>
+
+                        <span class="Splash-priceLarge">
+                            33:-
+                        </span>
+
+
+                        </span>
+                    </p>                </div>
+
+
+
+
+
+                                </div>
+
+                            </div>
+                            <div class="ItemTeaser-info">
+                                <h3 class="ItemTeaser-heading">Coca Cola Citron</h3>
+                                <p class="ItemTeaser-description">
+
+
+
+                                    <span class="ItemTeaser-brand">Coca-Cola</span>
+                                    150 CL.
+                                    Jfr-pris 11.3/kr/lit. <span class="ItemTeaser-extra">Pant 2:-</span>
+                                </p>
+
+
+
+                                <div class="ItemTeaser-cta">
+                                    <span class="ItemTeaser-restrictions">Max 2/hushåll</span>
+                                    <p class="ItemTeaser-price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <span class="ItemTeaser-priceValue js-price" aria-label="Pris" itemprop="price" content="16:95">16:95 <span class="u-textXSmall">/st</span></span>
+                                    </p>
+                                </div>
+
+                                <div class="ItemTeaser-button js-buttonView">
+                                    <button type="button" class="Button Button--green Button--medium Button--full Button--radius u-hidden js-kop">Köp</button>
+                                    <fieldset class="AddToCart js-buttonContainer js-changeButtonsContainer">
+                                        <div class="AddToCart-container">
+                                            <button type="button" class="AddToCart-button AddToCart-button--subtract js-subtract" tabindex="-1" aria-label="Minska antal"></button>
+                                            <input class="AddToCart-input js-input" type="number" pattern="\d*" min="0" max="10000" value="0">
+                                            <button type="button" class="AddToCart-button AddToCart-button--add is-active js-add" tabindex="-1" aria-label="Öka antal"></button>
+                                            <button type="button" class="AddToCart-button AddToCart-button--confirm is-confirm u-hidden js-ok" tabindex="-1"></button>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </article></div><div class="Swiper-slide js-swiperSlide is-visible" style="width: 159px; margin-right: 1px;"><article class="ItemTeaser js-product" itemscope="" itemtype="http://schema.org/Product">
+
+                        <div class="ItemTeaser-content">
+                            <a class="ItemTeaser-link ItemTeaser-link--buyable js-asyncLink js-link" href="/handla/p/7300156584250"></a>
+                            <div class="ItemTeaser-media">
+
+                                <div class="ItemTeaser-image">
+                    <img class="" alt="Hamburgare" itemprop="image" draggable="false" src="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_90,c_lpad,g_center,h_222,w_222/383092.jpg" data-src-set="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_70,c_lpad,g_center,h_444,w_444/383092.jpg 2x" data-img-src="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_90,c_lpad,g_center,h_222,w_222/383092.jpg" srcset="//res.cloudinary.com/coopsverige/image/upload/fl_progressive,q_70,c_lpad,g_center,h_444,w_444/383092.jpg 2x">            </div>
+
+                                <div class="ItemTeaser-promos">
+
+
+
+                                    <div class="ItemTeaser-splash">
+                    <p class="Splash Splash--medium">
+                        <svg role="img" alt="Bakgrund" class="Splash-bg">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/build/sprite.svg#splash"></use>
+                        </svg>
+                        <span class="Splash-content">
+
+                        <span class="Splash-priceLarge">
+                            30:-
+                        </span>
+
+
+                        </span>
+                    </p>                </div>
+
+
+
+
+
+                                </div>
+
+                            </div>
+                            <div class="ItemTeaser-info">
+                                <h3 class="ItemTeaser-heading">Hamburgare</h3>
+                                <p class="ItemTeaser-description">
+
+
+
+                                    <span class="ItemTeaser-brand">Coop</span>
+                                    480 G.
+                                    Jfr-pris 76.98/kr/kg.
+                                </p>
+
+
+
+                                <div class="ItemTeaser-cta">
+                                    <p class="ItemTeaser-price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <span class="u-colorRed u-textXLarge">30:-<span class="u-colorRed u-textXSmall">/st</span></span>
+                                        <span class="ItemTeaser-priceValue js-price u-textLineThrough u-textXSmall" aria-label="Pris" itemprop="price" content="36:95">36:95 /st</span>
+                                    </p>
+                                </div>
+
+                                <div class="ItemTeaser-button js-buttonView">
+                                    <button type="button" class="Button Button--green Button--medium Button--full Button--radius u-hidden js-kop">Köp</button>
+                                    <fieldset class="AddToCart js-buttonContainer js-changeButtonsContainer">
+                                        <div class="AddToCart-container">
+                                            <button type="button" class="AddToCart-button AddToCart-button--subtract js-subtract" tabindex="-1" aria-label="Minska antal"></button>
+                                            <input class="AddToCart-input js-input" type="number" pattern="\d*" min="0" max="10000" value="0">
+                                            <button type="button" class="AddToCart-button AddToCart-button--add is-active js-add" tabindex="-1" aria-label="Öka antal"></button>
+                                            <button type="button" class="AddToCart-button AddToCart-button--confirm is-confirm u-hidden js-ok" tabindex="-1"></button>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </article></div></div>
+                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                    <div class="Swiper-button Swiper-button--prev is-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true">
+                                        <svg role="img" alt="Arrow" class="Swiper-arrow">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/build/sprite.svg#arrow-left"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="Swiper-button Swiper-button--next is-disabled" tabindex="0" role="button" aria-label="Next slide" aria-disabled="true">
+                                        <svg role="img" alt="Arrow" class="Swiper-arrow">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/build/sprite.svg#arrow-right"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+        <!-- RECO START-->            
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+</div>
+
+    </div>
+</main>
