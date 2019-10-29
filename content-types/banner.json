@@ -16,7 +16,7 @@
       "description": "The background image for the banner",
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/image.json"
+          "$ref": "http://image.json"
         }
       ]
     },
