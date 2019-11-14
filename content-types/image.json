@@ -65,7 +65,6 @@
   },
   "propertyOrder": [
     "image",
-    "width",
     "imageAltText",
     "seoText",
     "roundel",
