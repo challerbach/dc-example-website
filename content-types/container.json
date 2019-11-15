@@ -29,7 +29,7 @@
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/text.json",
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/externalBlock.json",
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/splitBlock.json",
-                  "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/image.json",
+                  "http://image.json",
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/cardList.json",
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/banner.json",
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/blogList.json",
