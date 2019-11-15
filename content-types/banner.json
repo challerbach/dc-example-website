@@ -143,8 +143,8 @@
     },
     "ActBeautiful": {
       "type": "boolean",
-      "title": "Handwritten font",
-      "description": "Enable to have handwritten font in Header"
+      "title": "Handwriting font",
+      "description": "Enable to have handwriting font in Header"
     },
     "headcolor": {
 	"title": "Headline color",
