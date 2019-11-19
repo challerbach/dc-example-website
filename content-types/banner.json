@@ -187,7 +187,8 @@
 		 "48",
 		 "60"
                    ]
-  }"metadata": {
+  },
+"metadata": {
       "type": "array",
       "title": "Metadata",
       "description": "Metadata",
