@@ -187,9 +187,20 @@
 		 "48",
 		 "60"
                    ]
-  }
+  }"metadata": {
+      "type": "array",
+      "title": "Metadata",
+      "description": "Metadata",
+      "items": {
+        "$ref": "http://metadata.json"
+      },
+      "minItems": 0,
+      "maxItems": 1,
+      "_interpolate": true
+    }
   },	  
   "propertyOrder": [
+    "metadata",
     "img",
     "header",
     "headcolor",
