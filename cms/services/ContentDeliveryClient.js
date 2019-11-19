@@ -1,8 +1,9 @@
 const request = require('request');
 
-function ContentDeliveryClient(baseUrl, account) {
+function ContentDeliveryClient(baseUrl, account, locale) {
     this.baseUrl = baseUrl;
     this.account = account;
+    this.locale= locale;
 
     if(this.baseUrl.indexOf('://') == -1) {
         this.baseUrl = 'http://' + this.baseUrl;
@@ -17,32 +18,30 @@ ContentDeliveryClient.prototype.getById = function(id) {
     return this.query({"sys.iri":"http://content.cms.amplience.com/" + id});
 };
 
-ContentDeliveryClient.prototype.query = function(query, scope, fullBodyObject) {
-    if(scope === undefined) {
-        scope = "tree";
-    }
-    if(fullBodyObject === undefined) {
-        fullBodyObject = true;
-    }
-
-    var url = this.baseUrl + '/cms/content/query' +
-            '?query=' + encodeURIComponent(JSON.stringify(query)) +
-            '&store=' + encodeURIComponent(this.account) +
-            '&scope=' + encodeURIComponent(scope) +
-            '&fullBodyObject=' + encodeURIComponent(fullBodyObject) + '&locale=de-DE,en-GB,*';
-    console.log(url)
-
-    return new Promise(function(resolve, reject) {
-        request(url, function (error, response, body) {
-            if(error) {
-                reject(error);
-            }else{
-                console.log(body)
-                resolve(JSON.parse(body));
-            }
-        });
-    });
-
+ContentDeliveryClient.prototype.query = function(query, scope, fullBodyObject, locale) {
+   if(scope === undefined) {
+       scope = "tree";
+   }
+   if(fullBodyObject === undefined) {
+       fullBodyObject = true;
+   }
+   var url = this.baseUrl + '/cms/content/query' +
+           '?query=' + encodeURIComponent(JSON.stringify(query)) +
+           '&store=' + encodeURIComponent(this.account) +
+           '&scope=' + encodeURIComponent(scope) +
+           '&fullBodyObject=' + encodeURIComponent(fullBodyObject) +
+           '&locale=' + (this.locale + ',de-DE,*' || '*');
+   console.log(url)
+   return new Promise(function(resolve, reject) {
+       request(url, function (error, response, body) {
+           if(error) {
+               reject(error);
+           }else{
+               console.log(body)
+               resolve(JSON.parse(body));
+           }
+       });
+   });
 };
 
 module.exports = ContentDeliveryClient;
