@@ -28,6 +28,7 @@
                   "http://image.json",
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/video.json",
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/text.json",
+                  "http://text-block.html",
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/banner.json"
                 ]
               }
