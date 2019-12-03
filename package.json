@@ -14,7 +14,7 @@
     "ejs": "^2.6.1",
     "express": "^4.17.1",
     "express-less": "^0.1.0",
-    "handlebars": "^4.0.12",
+    "handlebars": "^4.5.3",
     "handlebars-helpers": "^0.9.8",
     "less": "^3.8.1",
     "lodash": "^4.17.10",
@@ -27,7 +27,7 @@
     "q": "^1.5.0",
     "request": "^2.88.0",
     "serve-favicon": "~2.4.2",
-    "showdown": "^1.8.6",
+    "showdown": "^1.9.1",
     "uuid": "^3.3.2",
     "x-ray": "^2.3.4"
   }

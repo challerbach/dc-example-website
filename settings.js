@@ -12,7 +12,7 @@ module.exports = {
             route: "/womens",
             layout: "landing",
             slots: {
-                "content": "cd390834-d1e0-4b94-9e02-283b4ece71e5"
+                "content": "3e0aa2d6-fedb-4eff-a4ea-be1ee518641c"
             }
         },
         {
@@ -23,39 +23,46 @@ module.exports = {
             }
         },
         {
-            route: "/beauty",
+            route: "/kids",
             layout: "landing",
             slots: {
-                "content": "3226c61d-2d7e-4a13-b75f-5113e6f1062a"
+                "content": "6ceca040-786a-479f-9cd5-71f64110cdfe"
             }
         },
         {
-            route: "/lighting",
+            route: "/jewellery",
             layout: "landing",
             slots: {
-                "content": "33ad3e34-6efe-4030-a157-e95660200ff2"
+                "content": "e23338d1-8c2b-4f4b-8788-4f504e23b18b"
             }
         },
         {
-            route: "/furniture",
+            route: "/sport",
             layout: "landing",
             slots: {
-                "content": "78b2a5bf-764c-41c3-88ac-6ed88e85ff44"
+                "content": "add4b141-70e5-48f0-8c61-b409fbb72fec"
             }
         },
         ,
         {
-            route: "/electricals",
+            route: "/beauty",
             layout: "landing",
             slots: {
-                "content": "38935fef-01e0-40e1-acfd-caf4f4e41219"
+                "content": "17b83e6e-326f-4add-aafb-b322caafc950"
             }
         },
         {
-            route: "/inspiration",
+            route: "/home",
             layout: "landing",
             slots: {
-                "content": "7b3291ac-2e91-459c-bc27-58c7cd7878d3"
+                "content": "9b263d94-0539-4148-8561-b8a942d3f106"
+            }
+        },
+        {
+            route: "/unternehmen",
+            layout: "landing",
+            slots: {
+                "content": "3a3583be-34ae-4aed-b24a-e87046d88e46"
             }
         }
     ]
