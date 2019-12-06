@@ -5,61 +5,46 @@ module.exports = {
             route: "/",
             layout: "landing",
             slots: {
-                "content": "b71dd98b-785c-41df-9e13-099fb2d07905"
+                "content": "baaac862-5d9c-419f-9af2-a2e79fee85dc"
             }
         },
         {
-            route: "/womens",
+            route: "/telefony",
             layout: "landing",
             slots: {
-                "content": "3e0aa2d6-fedb-4eff-a4ea-be1ee518641c"
+                "content": "65aebb26-adf2-4d5e-97ee-8d607cdd0c1f"
             }
         },
         {
-            route: "/mens",
+            route: "/oferta",
             layout: "landing",
             slots: {
-                "content": "9d07598e-611c-4fc5-b58e-50061c419d09"
+                "content": "3489d182-0ad6-4fd7-b6a4-81e978a55b1e"
             }
         },
         {
-            route: "/kids",
+            route: "/obsluga_klienta",
             layout: "landing",
             slots: {
-                "content": "6ceca040-786a-479f-9cd5-71f64110cdfe"
+                "content": "0cd86a68-8235-41e9-81db-76e70eb9944b"
             }
         },
         {
-            route: "/jewellery",
+            route: "/urzadzenia",
             layout: "landing",
             slots: {
-                "content": "e23338d1-8c2b-4f4b-8788-4f504e23b18b"
+                "content": "a55974e1-bb5c-4b32-9eb6-7970aff734e5"
             }
         },
         {
-            route: "/sport",
+            route: "/play24",
             layout: "landing",
             slots: {
                 "content": "add4b141-70e5-48f0-8c61-b409fbb72fec"
             }
         },
-        ,
         {
-            route: "/beauty",
-            layout: "landing",
-            slots: {
-                "content": "17b83e6e-326f-4add-aafb-b322caafc950"
-            }
-        },
-        {
-            route: "/home",
-            layout: "landing",
-            slots: {
-                "content": "9b263d94-0539-4148-8561-b8a942d3f106"
-            }
-        },
-        {
-            route: "/unternehmen",
+            route: "/about",
             layout: "landing",
             slots: {
                 "content": "3a3583be-34ae-4aed-b24a-e87046d88e46"
