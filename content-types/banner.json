@@ -199,9 +199,22 @@
       "maxItems": 1,
       "_interpolate": true
     }
-  },	  
+  }
+"location": {
+      "type": "array",
+      "title": "External Data Location",
+      "description": "Metadata",
+      "items": {
+        "$ref": "http://chooser-api.json"
+      },
+      "minItems": 0,
+      "maxItems": 1,
+      "_interpolate": true
+    }
+  },
   "propertyOrder": [
     "metadata",
+    "location",	  
     "img",
     "header",
     "headcolor",
