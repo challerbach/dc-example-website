@@ -20,6 +20,7 @@ function compileSlots(response) {
 }
 
 function compile(content) {
+    //console.log("getting the Compilation!" + JSON.stringify(content));
     return handlebarsService.process('mapping', content, {
         getTemplate: getTemplate
     });
@@ -27,7 +28,8 @@ function compile(content) {
 
 
 function getTemplate(name) {
-    console.log("getting the template!" + name)
+    console.log("getting the template!" + name);
+
     return new Promise(function(resolve, reject) {
         fs.readFile(path.resolve(__dirname, '../templates/' + name + '.hbs'), "utf-8", function (error, data) {
             if(error) {

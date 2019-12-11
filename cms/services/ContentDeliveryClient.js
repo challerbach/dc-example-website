@@ -30,14 +30,13 @@ ContentDeliveryClient.prototype.query = function(query, scope, fullBodyObject, l
            '&store=' + encodeURIComponent(this.account) +
            '&scope=' + encodeURIComponent(scope) +
            '&fullBodyObject=' + encodeURIComponent(fullBodyObject) +
-           '&locale=' + (this.locale + ',de-DE,*' || '*');
-   console.log(url)
+           '&locale=' + (this.locale + ',de-DE,*' || '*') +
+           '&v=' + Math.random()*100;
    return new Promise(function(resolve, reject) {
        request(url, function (error, response, body) {
            if(error) {
                reject(error);
            }else{
-               console.log(body)
                resolve(JSON.parse(body));
            }
        });

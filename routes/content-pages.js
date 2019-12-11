@@ -16,32 +16,32 @@ function registerPage(page) {
     var slotIds = _.values(slotMap);
 
     var client = new ContentDeliveryClient(req.cookies['amplience-host'] || settings.cms, settings.cmsAccount, req.query.locale);
-
+    console.log(req.query.segment)
     Promise.resolve(slotIds)
-        .then(client.getByIds.bind(client))
-        .then(templateService.compileSlots)
-        .then(function(slots) {
+    .then(client.getByIds.bind(client))
+    .then(templateService.compileSlots)
+    .then(function(slots) {
 
-          var pageModel = {};
-          for(var key in slotMap) {
-            pageModel[key] = slots[slotMap[key]];
-          }
-          return pageModel;
+      var pageModel = {};
+      for(var key in slotMap) {
+        pageModel[key] = slots[slotMap[key]];
+      }
+      return pageModel;
 
-        })
-        .then(function(pageModel) {
-          pageModel.session = req.cookies;
-          pageModel.moment = moment;
-          res.render('layouts/' + page.layout, pageModel);
-        })
-        .catch(function(err) {
-          res.render('pages/error', {
-            message: err.message,
-              error: err
-          });
-        });
+    })
+    .then(function(pageModel) {
+      pageModel.session = req.cookies;
+      pageModel.moment = moment;
+      res.render('layouts/' + page.layout, pageModel);
+    })
+    .catch(function(err) {
+      res.render('pages/error', {
+        message: err.message,
+          error: err
+      });
+    });
 
-  });
+});
 }
 
 function getSlotMap(page, req) {

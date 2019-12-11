@@ -98,6 +98,10 @@
     {{> product }}
 {{/if}}
 
+{{#if (test this.[@type] (toRegex ".*/recipe")) }}
+    {{> recipe }}
+{{/if}}
+
 {{#if (test this.[@type] (toRegex ".*/container-slot.json")) }}
     {{> container-slot }}
 {{/if}}
@@ -109,6 +113,7 @@
 {{#if (test this.[@type] (toRegex ".*/banner-slot.json")) }}
     {{> banner-slot }}
 {{/if}}
-{{#if (test this.[@type] (toRegex ".*/recipe")) }}
-    {{> recipe }}
+
+{{#if (test this.[@type] (toRegex ".*/personalized-slot.json")) }}
+    {{> personalized-banner-slot }}
 {{/if}}

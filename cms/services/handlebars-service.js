@@ -23,14 +23,15 @@ function registerHelpers(Handlebars){
             'comparison',
             'date',
             'html',
-            'math', 
+            'math',
             'misc',
             'number',
             'object',
             'regex',
             'string',
             'url',
-            'markdown'
+            'markdown',
+            'filter'
         ],
         {
             handlebars: Handlebars
@@ -95,7 +96,7 @@ function processSingleTemplate(templateName, data, state){
 
     return state.config.getTemplate(templateName)
         .then(function(template){
-            
+
             var output;
             runWithState(state, function(){
                 var compiled = Handlebars.compile(template, {srcName: templateName});
@@ -106,7 +107,7 @@ function processSingleTemplate(templateName, data, state){
             var markerPromises = markers.map(function(id){
                 return state.markers[id];
             });
-            
+
             return Q.allSettled(markerPromises).then(function(results){
                 results.forEach(function (result, i) {
                     var id = markers[i];

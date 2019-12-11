@@ -3,9 +3,12 @@ module.exports = {
     cmsAccount: "presales",
     sitemap: [{
             route: "/",
-            layout: "landing",
+            layout: "homepage",
             slots: {
-                "content": "baaac862-5d9c-419f-9af2-a2e79fee85dc"
+                "hero": "5e4da2ce-1496-4562-af2a-6b8f0a9878fc",
+                "body": "755ece64-9f4e-4dcf-99b8-773a24b1bb27",
+                "content": "c1873796-212a-4a02-bf60-2e445813ff30"
+
             }
         },
         {
@@ -40,7 +43,7 @@ module.exports = {
             route: "/play24",
             layout: "landing",
             slots: {
-                "content": "add4b141-70e5-48f0-8c61-b409fbb72fec"
+                "content": "4127efc2-c4e7-4fee-a9da-baca0bb61331"
             }
         },
         {
