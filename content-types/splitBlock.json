@@ -24,7 +24,6 @@
               "contentType": {
                 "title": "",
                 "enum": [
-                  "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/image.json",
                   "http://image.json",
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/video.json",
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/text.json",
