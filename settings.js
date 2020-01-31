@@ -43,21 +43,6 @@ module.exports = {
                 "content": "add4b141-70e5-48f0-8c61-b409fbb72fec"
             }
         },
-        ,
-        {
-            route: "/beauty",
-            layout: "landing",
-            slots: {
-                "content": "17b83e6e-326f-4add-aafb-b322caafc950"
-            }
-        },
-        {
-            route: "/home",
-            layout: "landing",
-            slots: {
-                "content": "9b263d94-0539-4148-8561-b8a942d3f106"
-            }
-        },
         {
             route: "/unternehmen",
             layout: "landing",
