@@ -6,29 +6,29 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "~1.17.1",
+    "body-parser": "^1.19.0",
     "bower": "^1.8.4",
     "cms-javascript-sdk": "github:amplience/cms-javascript-sdk",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "ejs": "^2.6.1",
-    "express": "~4.15.2",
+    "express": "^4.17.1",
     "express-less": "^0.1.0",
-    "handlebars": "^4.0.12",
+    "handlebars": "^4.7.2",
     "handlebars-helpers": "^0.9.8",
     "less": "^3.8.1",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.15",
     "lory.js": "2.2.1",
     "marko": "^4.13.4",
     "moment": "^2.22.2",
-    "morgan": "~1.8.1",
+    "morgan": "^1.9.1",
     "nom": "0.0.3",
     "npm": "^5.10.0",
     "q": "^1.5.0",
     "request": "^2.88.0",
     "serve-favicon": "~2.4.2",
-    "showdown": "^1.8.6",
+    "showdown": "^1.9.1",
     "uuid": "^3.3.2",
-    "x-ray": "2.1.0"
+    "x-ray": "^2.3.4"
   }
 }
