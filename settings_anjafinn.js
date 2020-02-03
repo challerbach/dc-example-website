@@ -23,28 +23,28 @@ module.exports = {
             }
         },
         {
-            route: "/beauty",
+            route: "/kids",
             layout: "landing",
             slots: {
                 "content": "6ceca040-786a-479f-9cd5-71f64110cdfe"
             }
         },
         {
-            route: "/lighting",
+            route: "/jewellery",
             layout: "landing",
             slots: {
                 "content": "e23338d1-8c2b-4f4b-8788-4f504e23b18b"
             }
         },
         {
-            route: "/furnture",
+            route: "/sport",
             layout: "landing",
             slots: {
                 "content": "add4b141-70e5-48f0-8c61-b409fbb72fec"
             }
         },
         {
-            route: "/electricals",
+            route: "/unternehmen",
             layout: "landing",
             slots: {
                 "content": "3a3583be-34ae-4aed-b24a-e87046d88e46"
