@@ -25,6 +25,7 @@
                 "title": "",
                 "enum": [
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/slider.json",
+                  "http://slide.json",
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/video.json",
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/text.json",
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/externalBlock.json",
